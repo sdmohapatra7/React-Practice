@@ -10,27 +10,29 @@ const Form = ()=>{
     };
 
     const[formData,setFormData]=useState(initialState);
+    const[error,setError] = useState("");
 
     const handleSubmit = (e)=>{
         e.preventDefault();
         if(formData.password !== formData.confirmPassword){
-            alert('Wronge Password');
+            setError('Wronge Password');
             return;
         }
-        alert('Submit Successfuly');
+        setError('Submit Successfuly');
         setFormData(initialState);
     }
-    
+
     const handleChange = (e)=>{
         console.log('e',e.target);
         const{name,value}=e.target;
         setFormData({...formData,[name]:value});
+        setError("");
     }
 
     return(
         <div>
             <h1>SignUp Form</h1>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div className="form">
                     <label htmlFor="name"> Name: </label>
                     <input type="text" id="name" name="name" value={formData.name} onChange={handleChange}></input>
@@ -48,7 +50,8 @@ const Form = ()=>{
                     <input type="text" id="confirmPassword" name="confirmPassword" value={formData.confirmPassword} onChange={handleChange}></input>
                 </div>
                 <div>
-                    <button type="submit" onClick={handleSubmit}>Submit</button>
+                    <button type="submit">Submit</button>
+                    {error && <div className="error">{error}</div>};
                 </div>
             </form>
         </div>
