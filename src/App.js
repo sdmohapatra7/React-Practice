@@ -3,6 +3,7 @@ import Counter from './components/Couner';
 import Form from './components/Form';
 import './App.css';
 import Car from './components/Car';
+import Student from './components/Student';
 
 function App() {
   
@@ -11,6 +12,7 @@ function App() {
       <Counter />
       <Form />
       <Car />
+      <Student />
     </div>
   );
 }
