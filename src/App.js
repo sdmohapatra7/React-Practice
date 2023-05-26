@@ -2,6 +2,7 @@ import React from 'react';
 import Counter from './components/Couner';
 import Form from './components/Form';
 import './App.css';
+import Car from './components/Car';
 
 function App() {
   
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Counter />
       <Form />
+      <Car />
     </div>
   );
 }
