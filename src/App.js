@@ -4,7 +4,8 @@ import Form from './components/Form';
 import './App.css';
 import Car from './components/Car';
 import Student from './components/Student';
-import Inventory from './components/Inventory'
+import Inventory from './components/Inventory';
+import Score from './components/Score';
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
       <Car />
       <Student />
       <Inventory />
+      <Score />
     </div>
   );
 }
