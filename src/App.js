@@ -4,6 +4,7 @@ import Form from './components/Form';
 import './App.css';
 import Car from './components/Car';
 import Student from './components/Student';
+import Inventory from './components/Inventory'
 
 function App() {
   
@@ -13,6 +14,7 @@ function App() {
       <Form />
       <Car />
       <Student />
+      <Inventory />
     </div>
   );
 }

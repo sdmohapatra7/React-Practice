@@ -49,7 +49,7 @@ const Car =()=>{
             <tbody>
                 {cars.map((car,index)=>
                 <tr key={index}>
-                    <td><img alt="" width={40} src={car.img}/></td>
+                    <td><img alt="" width={100} src={car.img}/></td>
                     <td>{car.name}</td>
                     <td>{car.avgSpeed}</td>
                 </tr>
