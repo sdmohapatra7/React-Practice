@@ -11,11 +11,11 @@ function App() {
   
   return (
     <div className="App">
-      <Counter />
+      {/* <Counter />
       <Form />
       <Car />
       <Student />
-      <Inventory />
+      <Inventory /> */}
       <Score />
     </div>
   );
